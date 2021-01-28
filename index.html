@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home | GESS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="logo"><a href="index.html"><img src="img/logo.png"> </a> </div>
+
+        <ul>
+            <li class="active"> <a href="index.html">Home</a> </li>
+            <li> <a href="portfolio.html">Facilities</a> </li>
+            <li> <a href="about.html">Admission</a> </li>
+            <li> <a href="contact.html">Contact</a> </li>
+            <li> <a href="contact.html">More</a>
+
+        </ul>
+        <div class="menu-btn">
+            <span class="burger1"></span>
+            <span class="burger2"></span>
+        </div>
+    </nav>
+
+    <div class="menu-overlay">
+        <span id="close" style="font-size: 2rem;">&#10006</span>
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="portfolio.html">Facilities</a> </li>
+            <li> <a href="about.html">Admission</a> </li>
+            <li> <a href="contact.html">Contact</a> </li>
+            <li> <a href="contact.html">More</a>
+
+            </li>
+        </ul>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/slides/84568972_3341816955832369_97104907005329408_o.jpg">
+                <h1>25th Aniversary and Parents Day</h1>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slides/117971860_3875173009163425_7551055380896656746_n.jpg">
+                <h1>SEE Graduates 2076</h1>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slides/85222895_3374316832582381_3153382254491729920_o.jpg">
+                <h1>Juniors Picnic</h1>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slides/slide1.jpg">
+                <h1>Exercise</h1>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slides/slide2.jpg">
+                <h1>Spelling Contest</h1>
+            </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="speciality">
+        <h1>Our Speciality</h1>
+        <div class="card-column">
+            <div class="card" data-aos="fade-up" data-aos-duration="900">
+                <div class="card-img" alt="speciality"> <img src="img/vectors/education.svg"> </div>
+                <div class="info">
+                    <h1>Quality Education</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptatibus quisquam, quis rerum distinctio nemo ad corporis ducimus assumenda fugiat velit asperiores dignissimos perferendis harum autem vero dolore molestiae quidem.</p>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="900">
+                <div class="card-img" alt="speciality"> <img src="img/vectors/friendly.svg"> </div>
+                <div class="info">
+                    <h1>Friendly Experience</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eligendi obcaecati quasi consectetur odio vitae quis, possimus molestias doloribus blanditiis nemo harum, iusto, cum. Maiores fugiat esse sapiente asperiores tempore.</p>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="900">
+                <div class="card-img" alt="speciality"> <img src="img/vectors/extracurricular.svg"> </div>
+                <div class="info">
+                    <h1>Extra C. Activities</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi corrupti labore itaque omnis, voluptate quaerat, consequatur iure quidem enim rem doloremque, quas odio fuga ipsum perferendis hic. Voluptatem rerum, iure.</p>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="900">
+                <div class="card-img" alt="speciality"> <img src="img/vectors/guiding.svg"> </div>
+                <div class="info">
+                    <h1>Best Guidance</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit et quam provident exercitationem ratione perferendis dolor esse. Repellendus incidunt porro officia molestiae maiores neque, quasi mollitia odio delectus, corrupti provident!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+    </script>
+    <script type="text/javascript" src="js/typewriter.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+        const openBtn = document.querySelector('.menu-btn');
+        const overlay = document.querySelector('.menu-overlay');
+        const closeBtn = document.querySelector('#close');
+        var tl = gsap.timeline({
+            defaults: {
+                duration: 1,
+                ease: Circ.easeOut,
+            }
+        })
+        tl.paused(true);
+        tl.to(".menu-overlay", 1, {
+            clipPath: 'polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)'
+        })
+
+        tl.from(".menu-overlay ul li", 1, {
+            opacity: 0,
+            x: '100px',
+            stagger: 0.5
+        }, "-=1")
+
+        openBtn.addEventListener('click', () => {
+            tl.play();
+        })
+        closeBtn.addEventListener('click', () => {
+            tl.reverse();
+        })
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+    <script src="js/smooth-scroll.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            effect: 'fade',
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+</body>
+
+</html>
