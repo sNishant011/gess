@@ -39,6 +39,23 @@ nav .logo img {
 
 }
 
+@media (max-width:500px) {
+    nav {
+        height: 11vh;
+    }
+
+    nav .logo {
+        width: 55px;
+        height: 60px;
+    }
+
+    nav .logo img {
+        height: 55px;
+        width: auto;
+        object-fit: cover;
+    }
+}
+
 nav ul {
     margin: 0;
     padding: 0.5rem;
@@ -100,7 +117,26 @@ nav .menu-btn {
     background-color: #fff;
 }
 
-@media(max-width:800px) {
+@media (max-width:500px) {
+
+    .menu-btn .burger1 {
+        width: 35px;
+        
+    }
+
+
+    .burger1::after {
+        width: 35px;
+        top: -8px;
+    }
+
+    .burger1::before {
+        width: 35px;
+        top: 8px;
+    }
+}
+
+@media (max-width:800px) {
     nav ul {
         display: none;
     }
@@ -413,10 +449,46 @@ ul li a {
     border-left: 1px solid gray;
     border-right: 1px solid gray;
     transition: all 0.5s;
-background: rgba( 0, 93, 255, 0.00 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 6px );
--webkit-backdrop-filter: blur( 6px );
+    background: rgba(0, 93, 255, 0.00);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     outline: none;
-    
+
 }
+
+.heads{
+    grid-template-columns: repeat(3,1fr) !important;
+    margin-top: 5% !important;
+    overflow: visible !important;
+}
+@media (max-width:700px){
+    .heads{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+    .heads .card:last-child{
+        margin-top: 25%;
+    }
+}
+@media (max-width:500px){
+    .heads{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .heads .card{
+        margin-top: 25%;
+    }
+}
+.heads .card{
+    overflow: visible !important;
+}
+.heads .card .info{
+    margin-top: 20%;
+}
+
+.heads img{
+    top: -25%;
+    height: 50%;
+    widows: 50%;
+    position: absolute;
+}
+
