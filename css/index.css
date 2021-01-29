@@ -18,11 +18,11 @@ nav {
     transition: all 0.5s ease;
     position: fixed;
     grid-template-columns: repeat(2, 1fr);
-background: rgba( 74, 144, 226, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 2px );
--webkit-backdrop-filter: blur( 2px );
-border-radius: 10px;
+    background: rgba(74, 144, 226, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
     z-index: 100;
 }
 
@@ -212,7 +212,7 @@ ul li a {
     transition: all 0.5s ease;
 }
 
-.swiper-container {      
+.swiper-container {
 
     width: 100%;
     height: 87vh;
@@ -220,7 +220,7 @@ ul li a {
 
 }
 
-.swiper-slide {
+.swiper-container .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -238,24 +238,28 @@ ul li a {
     -webkit-align-items: center;
     align-items: center;
 }
-.swiper-slide img{
+
+.swiper-container .swiper-slide img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.swiper-slide h1{
+
+.swiper-container .swiper-slide h1 {
     position: absolute;
     bottom: 5%;
     font-family: 'Nunito', sans-serif;
     color: #fff;
     text-shadow: 3px 3px 10px #000;
 }
-.speciality{
+
+.speciality {
     height: 100%;
     width: 100%;
     overflow: hidden
 }
-.speciality h1{
+
+.speciality h1 {
     text-align: center;
     margin: 0;
     color: #005DFF;
@@ -264,8 +268,9 @@ ul li a {
     font-family: 'Nunito', sans-serif;
     font-size: clamp(30px, 2.5rem, 6vw);
 }
-.speciality .card-column{
-    transition:all 0.3s ease;
+
+.speciality .card-column {
+    transition: all 0.3s ease;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -277,79 +282,141 @@ ul li a {
     grid-gap: 1.3rem;
     grid-template-columns: repeat(4, 1fr);
 }
-@media(max-width:1000px){
-    .speciality .card-column{
-        grid-template-columns: repeat(3,1fr);
+
+@media(max-width:1000px) {
+    .speciality .card-column {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-@media(max-width:750px){
-    .speciality .card-column{
-        grid-template-columns: repeat(2,1fr);
-        
+
+@media(max-width:750px) {
+    .speciality .card-column {
+        grid-template-columns: repeat(2, 1fr);
+
     }
-    .card .info p{
+
+    .card .info p {
         font-size: 0.6rem;
     }
 }
-@media(max-width:500px){
-    .speciality .card-column{
-        grid-template-columns: repeat(1,1fr);
-        
+
+@media(max-width:500px) {
+    .speciality .card-column {
+        grid-template-columns: repeat(1, 1fr);
+
     }
 
 }
-.speciality .card-column .card{
-    transition:all 0.3s ease;
+
+.speciality .card-column .card {
+    transition: all 0.3s ease;
     background-color: #E6EFFF;
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
-.card .card-img{
+.card .card-img {
     display: flex;
     justify-content: center;
 }
-.card img{
+
+.card img {
     width: 50%;
-    height:150px;
+    height: 150px;
     object-fit: contain;
 }
 
-.card .info{
+.card .info {
     color: #005dff;
     height: auto;
     margin: 0.2rem;
     box-sizing: border-box;
 }
-.card .info h1{
+
+.card .info h1 {
     padding: 0;
     text-align: center;
     font-size: clamp(25px, 2rem, 5vw);
 }
-.card .info p{
+
+.card .info p {
     color: #000;
     text-align: left;
     font-size: 1em;
     font-family: 'Nunito', sans-serif;
     letter-spacing: 0.1em;
-    padding:0 1rem 0 1rem;;
+    padding: 0 1rem 0 1rem;
+    ;
 }
-@media(max-width:750px){
-    .card{
+
+@media(max-width:750px) {
+    .card {
         border-radius: 10px;
     }
-    .card .info h1{
+
+    .card .info h1 {
         font-size: 1.3rem;
     }
-    .card .info p{
+
+    .card .info p {
         font-size: 0.8em;
     }
-}@media(max-width:500px){
-    .card .info h1{
+}
+
+@media(max-width:500px) {
+    .card .info h1 {
         font-size: 1.7rem;
     }
-    .card .info p{
+
+    .card .info p {
         font-size: 1em;
     }
+}
+
+.swiper-container #student-slide {
+    background-image: url(../img/background/writing-1149962_1920.jpg) !important;
+    background-position: center;
+    background-size: cover
+}
+
+#student-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    border: 5px solid #005dff;
+    outline: none;
+}
+
+#student-name {
+    position: absolute;
+    margin: 1rem;
+    padding: 0.5rem;
+    top: 32%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+#student-view {
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    width: 90%;
+    height: 30vh;
+    padding-top: 1rem;
+    bottom: 5%;
+    padding-bottom: 1rem;
+    border: none;
+    color: #000;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    transition: all 0.5s;
+background: rgba( 0, 93, 255, 0.00 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+    outline: none;
+    
 }
