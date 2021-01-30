@@ -22,7 +22,7 @@ html {
 
 nav {
     display: grid;
-    height: 13vh;
+    height: 80px;
     width: 100%;
     overflow: hidden;
     transition: all 0.5s ease;
@@ -51,7 +51,7 @@ nav .logo img {
 
 @media (max-width:700px) {
     nav {
-        height: 11vh;
+        height: 70px;
     }
 
     nav .logo {
@@ -261,7 +261,7 @@ ul li a {
 .swiper-container {
 
     width: 100%;
-    height: 87vh;
+    height: auto;
     box-sizing: border-box;
 
 }
@@ -286,7 +286,7 @@ ul li a {
 }
 
 .swiper-container .swiper-slide img {
-    height: auto;
+    height: 87vh;
     width: 100%;
     object-fit: cover;
 }
@@ -425,7 +425,9 @@ ul li a {
     background-position: center;
     background-size: cover
 }
-
+#student-slide{
+    height: 80vh !important;
+}
 #student-img {
     width: 120px;
     height: 120px;
@@ -553,38 +555,43 @@ ul li a {
     color: #005dff !important;
     font-family: 'Nunito', sans-serif;
 }
-#events-slide{
+
+#events-slide {
     background: #005dff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
 }
-#events-slide h1 {
-    font-family: 'Nunito', sans-serif !important;
-    font-weight: 600 !important;
-    position: relative !important; 
-    width: 100%;
-}
-#events-slide img{
-    width: 50%;
-    height: 87%;
-    right: 0;
-    position: absolute;
-    object-fit: cover
+
+@media (max-width:700px) {
+    #events-slide {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 #events-slide .info{
-    width: 50% !important;
-    height: 87%;
-    left: 0;
-    position: absolute;
-    align-items: center;
     justify-content: center;
-    top: 10%;
+    margin: 2rem;
+}
+#events-slide h1 {
+    all:initial !important;
+    font-size: clamp(30px, 2rem, 5vw) !important;
+    font-family: 'Nunito', sans-serif  !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    position: relative;
+    line-height: 5rem !important;
 }
 
-#events-slide p {
-    font-size: 0.9rem;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.1rem;
-    color: #fff;
-
-
+#events-slide .info p {
+    all: initial !important;
+    position: relative;
+    padding: 2rem;
+    box-sizing: border-box !important;
+    letter-spacing: 0.1rem !important;
+    font-family: 'Montserrat', sans-serif  !important;
+    color: #fff !important;
+    margin: 0 !important;
+}
+#events-slide img{
+    height: 50vh !important;
 }
