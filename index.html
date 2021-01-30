@@ -131,29 +131,68 @@
         <h1>Message from School Heads</h1>
         <div class="card-column heads">
             <div class="card" data-aos="fade-up" data-aos-duration="900">
-                <div class="card-img" alt="speciality"> <img src="img/vectors/education.svg"> </div>
+                <div class="card-img" alt="speciality"> <img src="img/saliesh.png"> </div>
                 <div class="info">
-                    <h1>Quality Education</h1>
+                    <h1>Sailesh Dangol</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptatibus quisquam, quis rerum distinctio nemo ad corporis ducimus assumenda fugiat velit asperiores dignissimos perferendis harum autem vero dolore molestiae quidem.</p>
+                    <a href="#">Read More</a>
                 </div>
             </div>
             <div class="card" data-aos="fade-up" data-aos-duration="900">
-                <div class="card-img" alt="speciality"> <img src="img/vectors/friendly.svg"> </div>
+                <div class="card-img" alt="speciality"> <img src="img/bishok.png"> </div>
                 <div class="info">
                     <h1>Friendly Experience</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eligendi obcaecati quasi consectetur odio vitae quis, possimus molestias doloribus blanditiis nemo harum, iusto, cum. Maiores fugiat esse sapiente asperiores tempore.</p>
+                    <a href="#">Read More</a>
+
                 </div>
             </div>
 
-            <div class="card" data-aos="fade-up" data-aos-duration="900">
-                <div class="card-img" alt="speciality"> <img src="img/vectors/guiding.svg"> </div>
-                <div class="info">
-                    <h1>Best Guidance</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit et quam provident exercitationem ratione perferendis dolor esse. Repellendus incidunt porro officia molestiae maiores neque, quasi mollitia odio delectus, corrupti provident! lorem</p>
-                </div>
-            </div>
         </div>
     </div>
+
+
+    <div class="swiper-container">
+        <h1 style="font-family: 'Nunito', sans-serif; text-align: center; color: #005dff; font-size: clamp(25px, 2rem, 5vw);">Up Comming Events</h1>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="events-slide">
+                <img src="img/background/books-1245690_1920.jpg">
+                <div class="info">
+                <h1>Second Terminal Examination</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ipsum, similique iste alias magni laborum quibusdam! Consequuntur incidunt quidem, provident blanditiis ratione, dolor natus id similique doloremque velit aspernatur cum.</p></div>
+            </div>
+               <div class="swiper-slide" id="events-slide">
+                <img src="img/background/writing-1149962_1920.jpg">
+                <div class="info">
+                <h1>Second Terminal Examination</h1> <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ipsum, similique iste alias magni laborum quibusdam! Consequuntur incidunt quidem, provident blanditiis ratione, dolor natus id similique doloremque velit aspernatur cum.</p></div>
+            </div>
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div class="social-feeds">
+        <h1>Our Social Feeds</h1>
+        <!-- Place <div> tag where you want the feed to appear -->
+        <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+    </div>
+    <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+    <script type="text/javascript">
+        /* curator-feed-default-feed-layout */
+        (function() {
+            var i, e, d = document,
+                s = "script";
+            i = d.createElement("script");
+            i.async = 1;
+            i.src = "https://cdn.curator.io/published/7b76c81b-8898-41e6-ad10-5b0b2a059ec2.js";
+            e = d.getElementsByTagName(s)[0];
+            e.parentNode.insertBefore(i, e);
+        })();
+    </script>
     <script type="text/javascript">
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
@@ -208,10 +247,7 @@
         var swiper = new Swiper('.swiper-container', {
             loop: true,
             effect: 'fade',
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
+
             pagination: {
                 el: '.swiper-pagination',
                 dynamicBullets: true,
