@@ -479,6 +479,7 @@ ul li a {
     grid-template-columns: repeat(2, 1fr) !important;
     margin-top: 7% !important;
     overflow: visible !important;
+    height: 100%;
 }
 
 .heads .info {
@@ -492,7 +493,7 @@ ul li a {
     padding-right: 1rem;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
-    border: 1px solid #005dff;
+    border: 2px solid #fff;
     border-radius: 8px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -505,6 +506,7 @@ ul li a {
     transition: 0.3s ease;
     background-color: #005dff;
     color: white;
+    box-shadow: -2px 2px 30px deepskyblue;
 }
 
 @media (max-width:700px) {
@@ -534,9 +536,15 @@ ul li a {
 }
 
 .heads .card {
+    transition:transform 0.5s !important;
     overflow: visible !important;
+    transform: scale(0.9) rotate(5deg)!important;
+    box-shadow: 2px 2px 50px #000;
 }
-
+.heads .card:hover{ 
+    transition:transform 0.5s !important;
+    transform: scale(1) rotate(0deg)!important;
+}
 .heads .card .info {
     margin-top: 20%;
 }
@@ -650,11 +658,42 @@ footer li{
 footer li a{
     color: #fff;
     text-decoration: none;
-    border-bottom: 1px solid #005dff;
 }
-footer li a:hover{
-    border-bottom: 3px solid #005dff;
+footer li a::after{
+    content: '';
+    position: absolute;
 }
+
+
+
+footer li a {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+    z-index: 1;
+}
+footer li a::after {
+  content: "";
+  background: #005dff;
+  position: absolute;
+ 
+  z-index: -1;
+   left: -5px;
+  bottom: -2px;
+  width: 110%;
+  height: 10%;   
+  transition: 0.3s ease;
+}
+footer li a:hover::after {
+    color: #fff;
+  left: -5px;
+  bottom: -2px;
+  width: 110%;
+  height: 120%;
+    transition: 0.3s ease;
+}
+
 li img{
     margin-right: 0.3rem;
     width: 20px;
