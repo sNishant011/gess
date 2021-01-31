@@ -2,15 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400;500&display=swap');
 
-h1 {
-    text-align: center;
-    margin: 0;
-    color: #005DFF;
-    box-sizing: border-box;
-    padding: 0.3rem;
-    font-family: 'Nunito', sans-serif;
-    font-size: clamp(30px, 2.5rem, 6vw);
-}
+
 
 body,
 html {
@@ -23,6 +15,8 @@ html {
 nav {
     display: grid;
     height: 80px;
+    margin-top: 0px;
+    top: 0;
     width: 100%;
     overflow: hidden;
     transition: all 0.5s ease;
@@ -257,361 +251,60 @@ ul li a {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
-.swiper-container {
-
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-
-}
-
-.swiper-container .swiper-slide {
+h1{
+    position: relative;
+    margin-top: 80px;
     text-align: center;
-    font-size: 18px;
-    background: #fff;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.swiper-container .swiper-slide img {
-    height: 87vh;
-    width: 100%;
-    object-fit: cover;
-}
-
-.swiper-container .swiper-slide h1 {
-    position: absolute;
-    bottom: 5%;
-    font-family: 'Nunito', sans-serif;
-    color: #fff;
-    text-shadow: 3px 3px 10px #000;
-}
-
-.speciality {
-    height: 100%;
-    width: 100%;
-    overflow: hidden
-}
-
-.speciality h1 {
-    text-align: center;
-    margin: 0;
-    color: #005DFF;
+    color: gray;
     box-sizing: border-box;
     padding: 0.3rem;
     font-family: 'Nunito', sans-serif;
     font-size: clamp(30px, 2.5rem, 6vw);
 }
-
-.speciality .card-column {
-    transition: all 0.3s ease;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-    overflow: hidden;
+.facilities{
+    margin: 1rem;
     display: grid;
-    grid-gap: 1.3rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
 }
-
-@media(max-width:1000px) {
-    .speciality .card-column {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media(max-width:750px) {
-    .speciality .card-column {
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-
-    .card .info p {
-        font-size: 0.6rem;
-    }
-}
-
-@media(max-width:500px) {
-    .speciality .card-column {
-        grid-template-columns: repeat(1, 1fr);
-
-    }
-
-}
-
-.speciality .card-column .card {
-    transition: all 0.3s ease;
-    background-image: linear-gradient(to bottom, #00c6fb 0%, #005bea 100%);
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-
-}
-
-.card .card-img {
-    display: flex;
-    justify-content: center;
-}
-
-.card img {
-    width: 50%;
-    height: 150px;
-    object-fit: contain;
-}
-
-.card .info {
-    color: #fff;
+.facilities .card{
     height: auto;
-    margin: 0.2rem;
-    box-sizing: border-box;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border:0;
+}
+.x{
+background-image: linear-gradient(30deg, #4481eb 0%, #04befe 100%);
+}
+.x1{
+background-image: linear-gradient(-130deg, #4481eb 0%, #04befe 100%);
 }
 
-.card .info h1 {
-    padding: 0;
+.card h2{
+    margin: 0;
+    padding: 0.2rem;
+    font-size: clamp(25px, 1.5rem, 4vw);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
     color: #fff;
-    text-align: center;
-    font-size: clamp(25px, 2rem, 5vw);
 }
-
-.card .info p {
-    color: #fff;
-    text-align: left;
-    font-size: 0.9rem;
+.card p{
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.1em;
-    padding: 0 1rem 0 1rem;
-    ;
-}
-
-@media(max-width:750px) {
-    .card {
-        border-radius: 10px;
-    }
-
-    .card .info h1 {
-        font-size: 1.3rem;
-    }
-
-    .card .info p {
-        font-size: 0.8em;
-    }
-}
-
-@media(max-width:500px) {
-    .card .info h1 {
-        font-size: 1.7rem;
-    }
-
-    .card .info p {
-        font-size: 1rem;
-    }
-}
-
-.swiper-container #student-slide {
-    background-image: url(../img/background/writing-1149962_1920.jpg) !important;
-    background-position: center;
-    background-size: cover
-}
-
-#student-slide {
-    height: 80vh !important;
-}
-
-#student-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    position: absolute;
-    top: 10%;
-    border: 5px solid #005dff;
-    outline: none;
-}
-
-#student-name {
-    position: absolute;
-    margin: 1rem;
-    padding: 0.5rem;
-    top: 32%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-}
-
-#student-view {
-    position: absolute;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 300;
-    width: 90%;
-    height: 30vh;
-    padding-top: 1rem;
+    color: #fff;
     font-size: 0.9rem;
-    bottom: 5%;
-    padding-bottom: 1rem;
-    border: none;
-    color: #000;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    transition: all 0.5s;
-    background: rgba(0, 93, 255, 0.00);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    outline: none;
-
 }
-
-.heads {
-    grid-template-columns: repeat(2, 1fr) !important;
-    margin-top: 7% !important;
-    overflow: visible !important;
-    height: 100%;
-}
-
-.heads .info {
-    margin-top: 10% !important;
-}
-
-.info a {
-    float: right;
-    margin: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    border: 2px solid #fff;
-    border-radius: 8px;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    background-color: #fff;
-    color: #005dff;
-}
-
-.info a:hover {
-    transition: 0.3s ease;
-    background-color: #005dff;
-    color: white;
-    box-shadow: -2px 2px 30px deepskyblue;
-}
-
-@media (max-width:700px) {
-    .heads {
-        grid-template-columns: repeat(2, 1fr) !important;
+@media (max-width:800px){
+    .facilities{
+        grid-template-columns: repeat(2, 1fr);
     }
-
-    .heads .info {
-        margin-top: 15% !important;
-    }
-
-}
-
-
-
-.heads .card {
-    transition:transform 0.5s !important;
-    overflow: visible !important;
-    transform: scale(0.9) rotate(5deg)!important;
-    box-shadow: 2px 2px 20px #000;
-}
-.heads .card:hover{ 
-    transition:transform 0.5s !important;
-    transform: scale(1) rotate(0deg)!important;
-}
-.heads .card .info {
-    margin-top: 0%;
-}
-
-.heads img {
-    top: -25%;
-    height: 40%;
-    width: 40%;
-    position: absolute;
-}
-@media (max-width:500px) {
-    #student-view {
-        bottom: 7%;
-        font-size: 0.8rem;
-    }
-
-    .heads {
-        grid-template-columns: repeat(1, 1fr) !important;
-    }
-
-    .heads .card {
-            transform: scale(1) rotate(0deg)!important;
-        margin-top: 0%;
-    }
-}
-.social-feeds h1 {
-    font-size: clamp(30px, 2.5rem, 6vw);
-
-}
-
-.crt-social-icon i,
-.crt-post .crt-post-footer .crt-post-share a,
-.crt-widget .crt-post-username a,
-.crt-widget .crt-post-fullname a {
-    color: #005dff !important;
-    font-family: 'Nunito', sans-serif;
-}
-
-#events-slide {
-    background: #005dff;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-}
-
-@media (max-width:700px) {
-    #events-slide {
+}@media (max-width:700px){
+    .facilities{
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-#events-slide .info {
-    justify-content: center;
-    margin: 2rem;
-}
-
-#events-slide h1 {
-    all: initial !important;
-    font-size: clamp(30px, 2rem, 5vw) !important;
-    font-family: 'Nunito', sans-serif !important;
-    font-weight: 600 !important;
-    color: #fff !important;
-    position: relative;
-    line-height: 5rem !important;
-}
-
-#events-slide .info p {
-    all: initial !important;
-    position: relative;
-    padding: 2rem;
-    box-sizing: border-box !important;
-    letter-spacing: 0.1rem !important;
-    font-family: 'Montserrat', sans-serif !important;
-    color: #fff !important;
-    margin: 0 !important;
-}
-
-#events-slide img {
-    height: 50vh !important;
-}
 footer{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
