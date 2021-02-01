@@ -85,7 +85,44 @@ nav .menu-btn {
     justify-content: center;
     display: none;
 }
+nav ul li ul{
+    background-color: white;
+    position: absolute;
+    z-index: 10000;
+    right: 10%;
+    width: auto;
+clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    transition:all 0.7s ease;
+}
+nav ul li ul li{
+    cursor: pointer;
+}
+nav ul li ul li:hover{
+    background: #005dff;
+    color: #fff;
+}
+nav ul li ul li:hover a{
+    color: #fff;
+}
+ul li ul li a{
+    color: #005dff;
 
+}
+#closebtn{
+
+    all: initial;
+    cursor: pointer;
+    width: auto;
+    padding:0.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+
+}
+#closebtn:hover{
+    border-radius: 20px;
+    background-color: #005dff;
+    color: #fff;
+}
 @media(max-width:800px) {
     nav .menu-btn {
         display: flex;
