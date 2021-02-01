@@ -10,6 +10,7 @@ html {
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 nav {
@@ -411,4 +412,20 @@ footer p{
     footer .info-links{
         grid-template-columns: repeat(1,1fr);
     }
+}
+/* 
+for admission.html */
+.procedure{
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 1rem;
+    line-height:2rem;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    
+}
+#highlight{
+    background-color: yellow;
+    font-weight: bold;
 }

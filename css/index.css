@@ -549,7 +549,9 @@ ul li a {
     }
 
     .heads {
+        margin-top: 10vh !important;
         grid-template-columns: repeat(1, 1fr) !important;
+        grid-gap: 15vh !important;
     }
 
     .heads .card {
