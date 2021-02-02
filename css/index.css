@@ -18,11 +18,14 @@ html {
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 nav {
     display: grid;
     height: 80px;
+    margin-top: 0px;
+    top: 0;
     width: 100%;
     overflow: hidden;
     transition: all 0.5s ease;
@@ -90,7 +93,6 @@ nav .menu-btn {
     justify-content: center;
     display: none;
 }
-
 nav ul li ul{
     background-color: white;
     position: absolute;
@@ -111,7 +113,6 @@ nav ul li ul li:hover a{
     color: #fff;
 }
 ul li ul li a{
-    margin: 0;
     color: #005dff;
 
 }
@@ -194,8 +195,10 @@ ul li ul li a{
 nav ul li {
     box-sizing: border-box;
     display: inline;
+    margin: 0.5rem;
     padding: 0.4rem;
-    margin-right: 0.4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     font-size: clamp(14px, 1.2rem, 20px);
     border-radius: 0px;
     transition: 0.4s ease;
@@ -218,10 +221,6 @@ ul li:hover a {
 }
 
 ul li a {
-    margin: 0.5rem;
-    padding: 0.4rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
     text-decoration: none;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -298,7 +297,6 @@ ul li a {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 .swiper-container {
 
     width: 100%;
