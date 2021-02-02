@@ -597,7 +597,7 @@ p {
     background-color: #fff;
     padding: 0.5rem 1.5rem  0.5rem 1.5rem;
     border-radius: 55px;
-    box-shadow: 5px 2px 20px #005dff;
+        box-shadow: 1px 1px 10px #000;
 }
 @media (max-width: 600px) {
   .learning .timeline .right {
@@ -746,4 +746,47 @@ footer p {
     footer .info-links {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+/* for detail-head-view */
+
+
+@media(max-width:750px) {
+    .card {
+        border-radius: 10px;
+    }
+
+    .card .info h1 {
+        font-size: 1.3rem;
+    }
+
+    .card .info p {
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width:500px) {
+    .card .info h1 {
+        font-size: 1.7rem;
+    }
+
+    .card .info p {
+        font-size: 1rem;
+    }
+}
+.about-box{
+    
+    background-color: #006dff;
+    color: #fff;
+    padding: 2rem;
+    margin: 3rem;
+    
+    margin-top: 100px;
+}
+.about-box p{
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+.about-box h1{
+    color: #fff;
+    margin-top: 0;
 }
