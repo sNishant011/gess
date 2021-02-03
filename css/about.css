@@ -211,13 +211,12 @@ ul li ul li a {
 nav ul li {
     box-sizing: border-box;
     display: inline;
-    margin: 0.5rem;
     padding: 0.4rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+     margin-right: 0.8rem;
     font-size: clamp(14px, 1.2rem, 20px);
     border-radius: 0px;
     transition: 0.4s ease;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -237,10 +236,16 @@ ul li:hover a {
 }
 
 ul li a {
+    box-sizing: border-box;
+    display: inline;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: clamp(14px, 1.2rem, 20px);
+    border-radius: 0px;
+    transition: 0.4s ease;
     text-decoration: none;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
-
 }
 
 
@@ -294,7 +299,7 @@ ul li a {
     margin-right: 10px;
     padding: 1rem;
     font-size: clamp(30px, 4vw, 70px);
-    font-family: 'Staatliches', cursive;
+    font-family: 'Nunito', sans-serif;
 }
 
 .menu-overlay ul a {
@@ -304,6 +309,8 @@ ul li a {
     width: 300px;
     text-decoration: none;
     color: #003899;
+    font-weight: 600;
+
 }
 
 .menu-overlay ul a:hover {
@@ -786,5 +793,85 @@ footer p {
         padding: 1rem;
         margin-top: 100px;
         border-radius: 15px !important;
+    }
+}
+/* for event detail */
+.event-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem;
+    grid-gap: 2rem;
+    margin: 3rem;
+    margin-top: 100px;
+    background-color: #008dff;
+}
+
+.eventimg img{
+    width: 100%;
+}
+.eventinfo{
+    width: 100%;
+    color: #fff;
+}
+.eventinfo h1{
+    font-size: clamp(30px, 2.5rem,5vw);
+    color: #fff;
+    margin: 0;
+}
+#event-subtitle{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+}
+.eventinfo a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    position: relative;
+    background-color: #005dff;
+    
+}
+@media (max-width:950px){
+    .event-card{
+        padding: 1.5rem;
+        margin: 2rem;
+        margin-top: 100px;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1.5rem;
+    }
+    .event-card h1{
+        margin: 0.5rem !important;
+        padding: 0.5rem;
+        text-align: left !important;
+    }
+    .event-card p{
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    #event-subtitle{
+        padding: 0.5rem;
+        margin:0.5rem;
+    }
+}
+@media (max-width:600px){
+
+    .event-card{
+        padding: 1rem;
+        margin: 1rem;
+        margin-top: 100px;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 0.5rem;
+    }
+    .event-card h1{
+        margin: 0.3rem !important;
+        padding: 0.4rem;
+        text-align: left !important;
+    }
+    .event-card p{
+        padding: 0.4rem;
+        margin: 0.3rem;
     }
 }

@@ -203,13 +203,12 @@ ul li ul li a{
 nav ul li {
     box-sizing: border-box;
     display: inline;
-    margin: 0.5rem;
     padding: 0.4rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+     margin-right: 0.8rem;
     font-size: clamp(14px, 1.2rem, 20px);
     border-radius: 0px;
     transition: 0.4s ease;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -229,9 +228,16 @@ ul li:hover a {
 }
 
 ul li a {
+    box-sizing: border-box;
+    display: inline;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: clamp(14px, 1.2rem, 20px);
+    border-radius: 0px;
+    transition: 0.4s ease;
     text-decoration: none;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
 
 }
 
